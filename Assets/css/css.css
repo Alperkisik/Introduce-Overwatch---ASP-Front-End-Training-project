@@ -1,0 +1,1361 @@
+﻿body, p {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+}
+
+main {
+    background-color: yellow;
+}
+
+footer {
+   
+}
+footer p{
+    text-align:left;
+    color:black;
+}
+
+.smIcons {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+
+.logo {
+    width: 250px;
+    height: 80px;
+    float: left;
+    margin: 15px 0px;
+    box-sizing: border-box;
+}
+
+.mainblock {
+    position: relative;
+    width: 100%;
+}
+
+.link {
+    margin-top: 15px;
+    width:340px; height:200px;
+}
+
+.characterBlock {
+    height: auto;
+    /*position: relative;*/
+}
+
+.cbRow1 {
+    bottom: 165px;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+}
+
+.cbRow2 {
+    bottom: 15px;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+}
+
+.menu {
+    width: 600px;
+    float: right;
+    margin: 35px 0px;
+    position:relative;
+}
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+        .menu ul li {
+            position: relative;
+            float: left;
+        }
+            .menu ul li a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                padding: 10px;
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+            }
+            .menu ul li ul li a {
+                text-align: center;
+                width:100%;
+            }
+
+        .menu ul ul {
+            margin-top: 0px;
+        }
+
+        .menu ul li ul {
+            display: none;
+            position: absolute;
+            background-color: rgba(23, 110, 232, 0.50);
+            z-index: 9999;
+            width: 150px;
+        }
+
+    .menu ul li:hover ul{
+        display:block;
+    }
+        .menu ul li ul li {
+            list-style: none;
+            float: left;
+            display: list-item;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu li a:hover {
+            text-decoration: underline;
+        }
+
+.container {
+    margin: 0 auto;
+    margin: 0px auto 0 auto;
+    width: 1170px;
+}
+
+    .container::before,
+    .container::after {
+        content: "";
+        display: table;
+    }
+
+    .container::after {
+        clear: both;
+    }
+
+.background1 {
+    width: 100%;
+    height: 800px;
+    background-image: url('../img/ow3.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:cover;
+    position: relative;
+}
+
+.background2 {
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/ow5.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+}
+
+.background3 {
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/ow6.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+}
+
+.specialDiv {
+    width: 100%;
+    min-height: 30px;
+    margin: 80px 0px;
+    padding: 15px 0px;
+}
+
+.SpecialBox {
+    width: 370px;
+    height: 477px;
+    margin-right: 30px;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+    .SpecialBox:nth-child(3n+3) {
+        margin-right: 0px;
+    }
+
+.SpecialBox2 {
+    width: 370px;
+    min-height: 20px;
+    margin-right: 30px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+.SpecialBox2:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: Big Noodle Too,impact,sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p1 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.p2 {
+    font-weight: 150;
+    font-size: 25px;
+}
+
+.p3 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#p4 {
+    float: right;
+    text-align:left;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.pFooter{
+    text-align:left;
+}
+
+.middle {
+    display: table;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    padding: 100px 0px;
+    overflow: hidden;
+}
+
+.margin {
+    margin: 150px 0px;
+}
+
+.backgroundColor {
+    background-color: rgba(23, 110, 232, 0.50);
+}
+
+.backgroundColor2 {
+    background-color:aliceblue;
+}
+
+.clearfx {
+    clear: both;
+}
+
+/*#region characters*/
+.ana {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .ana img {
+        width: 100%;
+        height:100%; 
+    }
+
+    .ana .overlay {
+        position: absolute;
+        top: -430px;
+        left: 400px;
+        display:none;
+        width: 500px;
+    }
+
+    .ana .overlay .characters {
+        width:180px;
+        height:400px;
+        float:left ; 
+    }
+
+        .ana .overlay p { 
+            float: left; 
+            color:#000;
+            margin-top:200px;
+            margin-left:15px;
+        }
+
+    .ana:hover .overlay { 
+        display: block;
+    }
+    .ana:hover{
+        border:3px solid yellow;
+    }
+
+.mccree {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+    .mccree img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mccree .overlay {
+        position: absolute;
+        top: -430px;
+        left: 200px;
+        display: none;
+        width: 500px;
+    }
+
+        .mccree .overlay .characters {
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+
+        .mccree .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .mccree:hover .overlay {
+        display: block;
+    }
+    .mccree:hover {
+        border: 3px solid yellow;
+    }
+
+.roadhog {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .roadhog img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .roadhog .overlay {
+        position: absolute;
+        top: -430px;
+        left: 130px;
+        display: none;
+        width: 500px;
+    }
+
+        .roadhog .overlay .characters {
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+
+        .roadhog .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .roadhog:hover .overlay {
+        display: block;
+    }
+    .roadhog:hover {
+        border: 3px solid yellow;
+    }
+
+.moira {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .moira img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .moira .overlay {
+        position: absolute;
+        top: -430px;
+        left: 50px;
+        display: none;
+        width: 500px;
+    }
+
+        .moira .overlay .characters {
+            width: 230px;
+            height: 400px;
+            float: left;
+        }
+
+        .moira .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .moira:hover .overlay {
+        display: block;
+    }
+
+    .moira:hover {
+        border: 3px solid yellow;
+    }
+
+.hanzo {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .hanzo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hanzo .overlay {
+        position: absolute;
+        top: -430px;
+        left: -50px;
+        display: none;
+        width: 500px;
+    }
+
+        .hanzo .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .hanzo .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .hanzo:hover .overlay {
+        display: block;
+    }
+
+    .hanzo:hover {
+        border: 3px solid yellow;
+    }
+
+.genji {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .genji img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .genji .overlay {
+        position: absolute;
+        top: -430px;
+        left: -150px;
+        display: none;
+        width: 500px;
+    }
+
+        .genji .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .genji .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .genji:hover .overlay {
+        display: block;
+    }
+
+    .genji:hover {
+        border: 3px solid yellow;
+    }
+
+.reinhardt {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .reinhardt img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .reinhardt .overlay {
+        position: absolute;
+        top: -430px;
+        left: -200px;
+        display: none;
+        width: 500px;
+    }
+
+        .reinhardt .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .reinhardt .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .reinhardt:hover .overlay {
+        display: block;
+    }
+
+    .reinhardt:hover {
+        border: 3px solid yellow;
+    }
+
+.reaper {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .reaper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .reaper .overlay {
+        position: absolute;
+        top: -430px;
+        left: -360px;
+        display: none;
+        width: 500px;
+    }
+
+        .reaper .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .reaper .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .reaper:hover .overlay {
+        display: block;
+    }
+
+    .reaper:hover {
+        border: 3px solid yellow;
+    }
+
+.torbjorn {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .torbjorn img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .torbjorn .overlay {
+        position: absolute;
+        top: -430px;
+        left: -420px;
+        display: none;
+        width: 500px;
+    }
+
+        .torbjorn .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .torbjorn .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .torbjorn:hover .overlay {
+        display: block;
+    }
+
+    .torbjorn:hover {
+        border: 3px solid yellow;
+    }
+
+.soldier {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .soldier img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .soldier .overlay {
+        position: absolute;
+        top: -430px;
+        left: -480px;
+        display: none;
+        width: 500px;
+    }
+
+        .soldier .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .soldier .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .soldier:hover .overlay {
+        display: block;
+    }
+
+    .soldier:hover {
+        border: 3px solid yellow;
+    }
+
+
+.dva {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .dva img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dva .overlay {
+        position: absolute;
+        top: -550px;
+        left: 400px;
+        display: none;
+        width: 500px;
+    }
+
+        .dva .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .dva .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .dva:hover .overlay {
+        display: block;
+    }
+
+    .dva:hover {
+        border: 3px solid yellow;
+    }
+
+.lucio {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .lucio img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lucio .overlay {
+        position: absolute;
+        top: -550px;
+        left: 330px;
+        display: none;
+        width: 500px;
+    }
+
+        .lucio .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .lucio .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .lucio:hover .overlay {
+        display: block;
+    }
+
+    .lucio:hover {
+        border: 3px solid yellow;
+    }
+
+.orisa {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .orisa img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .orisa .overlay {
+        position: absolute;
+        top: -550px;
+        left: 230px;
+        display: none;
+        width: 500px;
+    }
+
+        .orisa .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .orisa .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .orisa:hover .overlay {
+        display: block;
+    }
+
+    .orisa:hover {
+        border: 3px solid yellow;
+    }
+
+.sombra {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .sombra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sombra .overlay {
+        position: absolute;
+        top: -550px;
+        left: 130px;
+        display: none;
+        width: 500px;
+    }
+
+        .sombra .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .sombra .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .sombra:hover .overlay {
+        display: block;
+    }
+
+    .sombra:hover {
+        border: 3px solid yellow;
+    }
+
+.junkrat {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .junkrat img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .junkrat .overlay {
+        position: absolute;
+        top: -550px;
+        left: 30px;
+        display: none;
+        width: 500px;
+    }
+
+        .junkrat .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .junkrat .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .junkrat:hover .overlay {
+        display: block;
+    }
+
+    .junkrat:hover {
+        border: 3px solid yellow;
+    }
+
+.winston {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .winston img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .winston .overlay {
+        position: absolute;
+        top: -550px;
+        left: -130px;
+        display: none;
+        width: 500px;
+    }
+
+        .winston .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .winston .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .winston:hover .overlay {
+        display: block;
+    }
+
+    .winston:hover {
+        border: 3px solid yellow;
+    }
+
+.zarya {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .zarya img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .zarya .overlay {
+        position: absolute;
+        top: -550px;
+        left: -230px;
+        display: none;
+        width: 500px;
+    }
+
+        .zarya .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .zarya .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .zarya:hover .overlay {
+        display: block;
+    }
+
+    .zarya:hover {
+        border: 3px solid yellow;
+    }
+
+.bastion {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .bastion img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bastion .overlay {
+        position: absolute;
+        top: -550px;
+        left: -330px;
+        display: none;
+        width: 500px;
+    }
+
+        .bastion .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .bastion .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .bastion:hover .overlay {
+        display: block;
+    }
+
+    .bastion:hover {
+        border: 3px solid yellow;
+    }
+
+.widowmaker {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .widowmaker img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .widowmaker .overlay {
+        position: absolute;
+        top: -550px;
+        left: -430px;
+        display: none;
+        width: 500px;
+    }
+
+        .widowmaker .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .widowmaker .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .widowmaker:hover .overlay {
+        display: block;
+    }
+
+    .widowmaker:hover {
+        border: 3px solid yellow;
+    }
+
+.tracer {
+    width: 90px;
+    height: 95px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+    .tracer img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tracer .overlay {
+        position: absolute;
+        top: -550px;
+        left: -530px;
+        display: none;
+        width: 500px;
+    }
+
+        .tracer .overlay .characters {
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+
+        .tracer .overlay p {
+            float: left;
+            color: #000;
+            margin-top: 200px;
+            margin-left: 15px;
+        }
+
+    .tracer:hover .overlay {
+        display: block;
+    }
+
+    .tracer:hover {
+        border: 3px solid yellow;
+    }
+
+/*#endregion RegionName*/
+
+.video {
+    style ="position:absolute;"
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+}
+
+.icons {
+    margin-top:30px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        width:100%;
+    }
+
+    .logo{
+        width:100%;
+        text-align:center;
+    }
+    #p4{
+        float:none;
+        text-align:center;
+    } 
+    .video{
+        width:100%;
+        display:none;
+    }
+    .menu{
+        width:100%;
+    }
+    .menu ul{
+        float:none;
+        text-align:center;
+    }
+    main{
+        background-color:lemonchiffon;
+    }
+    p{
+        color:black;
+    }
+    .menu ul li{
+        float:none;
+        display:inline-block;
+    }
+    .background1{
+        width:100%;
+        background-color:white;
+        background-image:none;
+        height:100%;
+        padding:15px 0px;
+    }
+    .background2 {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        background-color: palegreen;
+    }
+    .background3 {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        background-image: none;
+    }
+    .backgroundColor {
+        width: 100%;
+        margin: 0px;
+    }
+    .backgroundColor2 {
+        width: 100%;
+        margin: 0px;
+    }
+    .middle{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .middle img{
+        width:80%;
+        margin:30px;
+        padding:30px;
+        text-align:center;
+    }
+    .middle p{
+        margin:0px 15px;
+    }
+    .specialDiv{
+        width:100%;
+        margin:0px 15px;
+        height:auto;
+    }
+    .SpecialBox{
+        float:none;
+        height:100%;
+        margin-top:15px;
+    }
+    .link{
+        width:auto;
+        height:auto;
+    }
+
+    .cbRow1 {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        margin: 15px;
+        text-align: center;
+        overflow: overlay;
+        height:100%;
+    }
+
+    .cbRow2 {
+        position: relative;
+        width: 100%;
+        height:100%;
+        bottom: 0;
+        margin: 15px;
+        text-align: center;
+        overflow: overlay;
+    }
+    .icons{
+        overflow:overlay;
+        text-align:center;
+        margin:0;
+        margin-bottom:30px;
+    }
+    .ana:hover > .overlay {
+        display: none;
+    }
+    .mccree:hover > .overlay {
+        display: none;
+    }
+    .roadhog:hover > .overlay {
+        display: none;
+    }
+    .moira:hover > .overlay  {
+        display: none;
+    }
+    .hanzo:hover > .overlay  {
+        display: none;
+    }
+    .genji:hover > .overlay  {
+        display: none;
+    }
+    .reinhardt:hover > .overlay  {
+        display: none;
+    }
+    .reaper:hover > .overlay  {
+        display: none;
+    }
+    .torbjorn:hover > .overlay  {
+        display: none;
+    }
+    .soldier:hover > .overlay  {
+        display: none;
+    }
+    .dva:hover > .overlay  {
+        display: none;
+    }
+    .lucio:hover > .overlay  {
+        display: none;
+    }
+    .orisa:hover > .overlay  {
+        display: none;
+    }
+    .sombra:hover > .overlay  {
+        display: none;
+    }
+    .junkrat:hover > .overlay  {
+        display: none;
+    }
+    .winston:hover > .overlay  {
+        display: none;
+    }
+    .zarya:hover > .overlay  {
+        display: none;
+    }
+    .bastion:hover > .overlay  {
+        display: none;
+    }
+    .widowmaker:hover > .overlay  {
+        display: none;
+    }
+    .tracer:hover > .overlay  {
+        display: none;
+    }
+    .SpecialBox2{
+        float:none;
+        width:100%;
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+    .image {
+        width: 50%;
+        height: 50%;
+    }
+
+    .SpecialBox2 p{
+        text-align:center;
+    }
+
+    .SpecialBox2 img{
+        text-align:center;
+    }
+    .smIcons{
+        overflow:overlay;
+        float:none;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+}

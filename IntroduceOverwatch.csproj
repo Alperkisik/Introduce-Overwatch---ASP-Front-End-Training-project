@@ -1,0 +1,290 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{032B2770-38A2-483E-BF3E-4B0DD930BFF8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntroduceOverwatch</RootNamespace>
+    <AssemblyName>IntroduceOverwatch</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\characters html\ana.html" />
+    <Content Include="Assets\characters html\bastion.html" />
+    <Content Include="Assets\characters html\dva.html" />
+    <Content Include="Assets\characters html\genji.html" />
+    <Content Include="Assets\characters html\hanzo.html" />
+    <Content Include="Assets\characters html\junkrat.html" />
+    <Content Include="Assets\characters html\lucio.html" />
+    <Content Include="Assets\characters html\mccree.html" />
+    <Content Include="Assets\characters html\moira.html" />
+    <Content Include="Assets\characters html\orisa.html" />
+    <Content Include="Assets\characters html\reaper.html" />
+    <Content Include="Assets\characters html\reinhardt.html" />
+    <Content Include="Assets\characters html\roadhog.html" />
+    <Content Include="Assets\characters html\soldier.html" />
+    <Content Include="Assets\characters html\sombra.html" />
+    <Content Include="Assets\characters html\torbjorn.html" />
+    <Content Include="Assets\characters html\tracer.html" />
+    <Content Include="Assets\characters html\widowmaker.html" />
+    <Content Include="Assets\characters html\winston.html" />
+    <Content Include="Assets\characters html\zarya.html" />
+    <Content Include="Assets\css\characters.css" />
+    <Content Include="Assets\css\css.css" />
+    <Content Include="Assets\img\characters\Ana.png" />
+    <Content Include="Assets\img\characters\bastion.png" />
+    <Content Include="Assets\img\characters\dva.png" />
+    <Content Include="Assets\img\characters\genji.png" />
+    <Content Include="Assets\img\characters\hanzo.png" />
+    <Content Include="Assets\img\characters\junkrat.png" />
+    <Content Include="Assets\img\characters\lucio.png" />
+    <Content Include="Assets\img\characters\Mccree.png" />
+    <Content Include="Assets\img\characters\Moira.png" />
+    <Content Include="Assets\img\characters\orisa.png" />
+    <Content Include="Assets\img\characters\reaper.png" />
+    <Content Include="Assets\img\characters\Reinhardt.png" />
+    <Content Include="Assets\img\characters\roadhog.png" />
+    <Content Include="Assets\img\characters\soldier76.png" />
+    <Content Include="Assets\img\characters\sombra.png" />
+    <Content Include="Assets\img\characters\torbjorn.png" />
+    <Content Include="Assets\img\characters\tracer.png" />
+    <Content Include="Assets\img\characters\widowmaker.png" />
+    <Content Include="Assets\img\characters\winston.png" />
+    <Content Include="Assets\img\characters\zarya.png" />
+    <Content Include="Assets\img\icons\ana-grenade.png" />
+    <Content Include="Assets\img\icons\ana-nano.png" />
+    <Content Include="Assets\img\icons\Ana-rifle.png" />
+    <Content Include="Assets\img\icons\ana-sleepdart.png" />
+    <Content Include="Assets\img\icons\bastion-gun.png" />
+    <Content Include="Assets\img\icons\bastion-reconfigure.png" />
+    <Content Include="Assets\img\icons\bastion-repair.png" />
+    <Content Include="Assets\img\icons\bastion-sentry.png" />
+    <Content Include="Assets\img\icons\bastion-ult.png" />
+    <Content Include="Assets\img\icons\blizzard.png" />
+    <Content Include="Assets\img\icons\dva-boosters.png" />
+    <Content Include="Assets\img\icons\dva-cannons.png" />
+    <Content Include="Assets\img\icons\dva-matrix.png" />
+    <Content Include="Assets\img\icons\dva-missile.png" />
+    <Content Include="Assets\img\icons\dva-ult.png" />
+    <Content Include="Assets\img\icons\genji-deflect.png" />
+    <Content Include="Assets\img\icons\genji-gun.png" />
+    <Content Include="Assets\img\icons\genji-swift.png" />
+    <Content Include="Assets\img\icons\genji-ult.png" />
+    <Content Include="Assets\img\icons\hanzo-gun.png" />
+    <Content Include="Assets\img\icons\hanzo-lunge.png" />
+    <Content Include="Assets\img\icons\hanzo-sonic.png" />
+    <Content Include="Assets\img\icons\hanzo-stormarrow.png" />
+    <Content Include="Assets\img\icons\hanzo-ult.png" />
+    <Content Include="Assets\img\icons\Icon-ana.png" />
+    <Content Include="Assets\img\icons\Icon-bastion.png" />
+    <Content Include="Assets\img\icons\Icon-dva.png" />
+    <Content Include="Assets\img\icons\Icon-genji.png" />
+    <Content Include="Assets\img\icons\Icon-hanzo.png" />
+    <Content Include="Assets\img\icons\Icon-junkrat.png" />
+    <Content Include="Assets\img\icons\Icon-lucio.png" />
+    <Content Include="Assets\img\icons\Icon-mccree.png" />
+    <Content Include="Assets\img\icons\Icon-moira.png" />
+    <Content Include="Assets\img\icons\Icon-orisa.png" />
+    <Content Include="Assets\img\icons\Icon-reaper.png" />
+    <Content Include="Assets\img\icons\Icon-reinhardt.png" />
+    <Content Include="Assets\img\icons\Icon-Roadhog.png" />
+    <Content Include="Assets\img\icons\Icon-Soldier76.png" />
+    <Content Include="Assets\img\icons\Icon-sombra.png" />
+    <Content Include="Assets\img\icons\Icon-torbjorn.png" />
+    <Content Include="Assets\img\icons\Icon-tracer.png" />
+    <Content Include="Assets\img\icons\Icon-widowmaker.png" />
+    <Content Include="Assets\img\icons\Icon-winston.png" />
+    <Content Include="Assets\img\icons\Icon-zarya.png" />
+    <Content Include="Assets\img\icons\junkrat-gun.png" />
+    <Content Include="Assets\img\icons\junkrat-mayhem.png" />
+    <Content Include="Assets\img\icons\junkrat-mine.png" />
+    <Content Include="Assets\img\icons\junkrat-trap.png" />
+    <Content Include="Assets\img\icons\junkrat-ult.png" />
+    <Content Include="Assets\img\icons\lucio-amp.png" />
+    <Content Include="Assets\img\icons\lucio-crossfade.png" />
+    <Content Include="Assets\img\icons\lucio-gun.png" />
+    <Content Include="Assets\img\icons\lucio-ult.png" />
+    <Content Include="Assets\img\icons\mccree-deadeye.png" />
+    <Content Include="Assets\img\icons\mccree-flash.png" />
+    <Content Include="Assets\img\icons\mccree-peacekepeer.png" />
+    <Content Include="Assets\img\icons\mccree-roll.png" />
+    <Content Include="Assets\img\icons\moira-fade.png" />
+    <Content Include="Assets\img\icons\moira-gun.png" />
+    <Content Include="Assets\img\icons\moira-orb.png" />
+    <Content Include="Assets\img\icons\moira-ult.png" />
+    <Content Include="Assets\img\icons\orisa-barrier.png" />
+    <Content Include="Assets\img\icons\orisa-fortify.png" />
+    <Content Include="Assets\img\icons\orisa-gun.png" />
+    <Content Include="Assets\img\icons\orisa-halt.png" />
+    <Content Include="Assets\img\icons\orisa-ult.png" />
+    <Content Include="Assets\img\icons\reaper-gun.png" />
+    <Content Include="Assets\img\icons\reaper-shadow.png" />
+    <Content Include="Assets\img\icons\reaper-ult.png" />
+    <Content Include="Assets\img\icons\reaper-wraith.png" />
+    <Content Include="Assets\img\icons\rein-barrier.png" />
+    <Content Include="Assets\img\icons\rein-charge.png" />
+    <Content Include="Assets\img\icons\rein-fireStrike.png" />
+    <Content Include="Assets\img\icons\rein-gun.png" />
+    <Content Include="Assets\img\icons\rein-ult.png" />
+    <Content Include="Assets\img\icons\roadhog-gun.png" />
+    <Content Include="Assets\img\icons\roadhog-heal.png" />
+    <Content Include="Assets\img\icons\roadhog-hook.png" />
+    <Content Include="Assets\img\icons\roadhog-wholehog.png" />
+    <Content Include="Assets\img\icons\socialMedia\if_Facebook_194929.png" />
+    <Content Include="Assets\img\icons\socialMedia\if_Google__194926.png" />
+    <Content Include="Assets\img\icons\socialMedia\if_Intsagram_194923.png" />
+    <Content Include="Assets\img\icons\socialMedia\if_Twitter_194909.png" />
+    <Content Include="Assets\img\icons\socialMedia\if_youtube_social_media_online_970009.png" />
+    <Content Include="Assets\img\icons\soldier-gun.png" />
+    <Content Include="Assets\img\icons\soldier-heal.png" />
+    <Content Include="Assets\img\icons\soldier-helix.png" />
+    <Content Include="Assets\img\icons\soldier-sprint.png" />
+    <Content Include="Assets\img\icons\soldier-ult.png" />
+    <Content Include="Assets\img\icons\sombra-gun.png" />
+    <Content Include="Assets\img\icons\sombra-hack.png" />
+    <Content Include="Assets\img\icons\sombra-stealth.png" />
+    <Content Include="Assets\img\icons\sombra-trans.png" />
+    <Content Include="Assets\img\icons\sombra-ult.png" />
+    <Content Include="Assets\img\icons\torbjorn-gun.png" />
+    <Content Include="Assets\img\icons\torbjorn-hammer.png" />
+    <Content Include="Assets\img\icons\torbjorn-turret.png" />
+    <Content Include="Assets\img\icons\torbjorn-ult.png" />
+    <Content Include="Assets\img\icons\tornjorn-armor.png" />
+    <Content Include="Assets\img\icons\tracer-blink.png" />
+    <Content Include="Assets\img\icons\tracer-gun.png" />
+    <Content Include="Assets\img\icons\tracer-recall.png" />
+    <Content Include="Assets\img\icons\tracer-ult.png" />
+    <Content Include="Assets\img\icons\widow-gun.png" />
+    <Content Include="Assets\img\icons\widow-hook.png" />
+    <Content Include="Assets\img\icons\widow-mine.png" />
+    <Content Include="Assets\img\icons\widow-ult.png" />
+    <Content Include="Assets\img\icons\winston-barrier.png" />
+    <Content Include="Assets\img\icons\winston-gun.png" />
+    <Content Include="Assets\img\icons\winston-jump.png" />
+    <Content Include="Assets\img\icons\winston-ult.png" />
+    <Content Include="Assets\img\icons\zarya-barrier.png" />
+    <Content Include="Assets\img\icons\zarya-gun.png" />
+    <Content Include="Assets\img\icons\zarya-protect.png" />
+    <Content Include="Assets\img\icons\zarya-ult.png" />
+    <Content Include="Assets\img\overwatch-logo-png-picture-3.png" />
+    <Content Include="Assets\img\ow.jpg" />
+    <Content Include="Assets\img\ow3.png" />
+    <Content Include="Assets\img\ow4.jpg" />
+    <Content Include="Assets\img\ow5.jpg" />
+    <Content Include="Assets\img\ow6.jpg" />
+    <Content Include="Assets\img\owlogo.jpg" />
+    <Content Include="Default.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56698</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56698/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
